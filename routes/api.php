@@ -12,14 +12,11 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Use App\Books;
 
-Route::get('/book', function() {
-    $book = [
-        'title' => 'Critique of Pure Reason',
-        'author' => 'Kant',
-    ];
-    return $book;
-});
+Route::apiResource('/book', 'BooksController');
+
+
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
