@@ -68,7 +68,7 @@ A correctly formatted book object must be provided in the request body in order 
 {
 	"title": "Truth & Method",
 	"author": "Gadamer",
-	"publication": 1923
+	"publication": "1923"
 	
 }
 ```
